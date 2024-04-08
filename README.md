@@ -11,3 +11,4 @@
     System Tray App
   </p>
 </p>
+Download the latest version: [NetProbe](https://github.com/theoneandonlyshadow/NetProbe/releases/tag/netprobe)
