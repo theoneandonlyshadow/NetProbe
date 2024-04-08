@@ -3,8 +3,8 @@ const { app, Tray, Menu, Notification } = require('electron');
 app.setAppUserModelId('MaxTac Automation'); // this name will display in the very top of the notification like a header.
 
 let tray = null;
-let notificationShown = false; // For connection lost
-let onlineNotificationShown = false; // For connection restored
+let notificationShown = false; // for connection lost
+let onlineNotificationShown = false; // Ffor connection restored
 
 app.on('ready', async () => {
   const isOnline = await import('is-online');
