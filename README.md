@@ -11,4 +11,4 @@
   </p>
 </p>
 <p align="center"> Download the latest version: <a href="https://github.com/theoneandonlyshadow/NetProbe/blob/main/netprobe.rar">NetProbe</a> </p>
-<p align="center"> Only download the <b>netprobe.rar then launch netprobe.exe</b> </p>
+<p align="center"> Only download the <b><u>netprobe.rar</u></b> then launch <b><u>netprobe.exe</u></b> </p>
