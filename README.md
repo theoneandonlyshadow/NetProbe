@@ -5,10 +5,9 @@
   <h3 align="center">NetProbe</h3>
   <p align="center">
     MaxTac Automation
-    <br/>
-    <br/>
-    <br>
-    System Tray App
+    <hr>
+   <h4 align="center"> System Tray App </h3>
+    <hr>
   </p>
 </p>
-Download the latest version: [NetProbe](https://github.com/theoneandonlyshadow/NetProbe/releases/tag/netprobe)
+<p align="center"> Download the latest version: <a href="https://github.com/theoneandonlyshadow/NetProbe/releases/tag/netprobe">NetProbe</a> </p>
