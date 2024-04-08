@@ -9,11 +9,11 @@ let onlineNotificationShown = false; // For connection restored
 app.on('ready', async () => {
   const isOnline = await import('is-online');
 
-  tray = new Tray('../pepe.png'); // add your own icon path but first check readme.md
+  tray = new Tray('pepe.png'); // add your own icon path but first check readme.md
   const contextMenu = Menu.buildFromTemplate([
     { label: 'Fire', type: 'normal', click: () => app.quit() } // you can use Quit instead of Fire. By clicking it, you close the app.
   ]);
-  tray.setToolTip('IConn - MaxTac'); // when you hover your mouse to the system tray app, you wil see this name.
+  tray.setToolTip('NetProbe - MaxTac'); // when you hover your mouse to the system tray app, you wil see this name.
   tray.setContextMenu(contextMenu);
 
   setInterval(async () => {
