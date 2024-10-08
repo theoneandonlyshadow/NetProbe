@@ -4,7 +4,7 @@
   </a>
   <h3 align="center">NetProbe</h3>
   <p align="center">
-    A  <a href="https://github.com/theoneandonlyshadow/Maximus-Shadow"> MaxTac </a> Automation System
+    A  <a href="https://github.com/theoneandonlyshadow/maxtac"> MaxTac </a> Automation System
     <hr>
    <h4 align="center"> System Tray App </h3>
     <hr>
