@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://github.com/theoneandonlyshadow/Maximus-Shadow">
   </a>
-  <h3 align="center">NetProbe</h3>
+  <h2 align="center">NetProbe</h2>
   <p align="center">
     A  <a href="https://github.com/theoneandonlyshadow/maxtac"> MaxTac </a> Automation System
     <hr>
