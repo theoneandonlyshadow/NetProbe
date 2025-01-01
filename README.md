@@ -10,5 +10,6 @@
     <hr>
   </p>
 </p>
-<p align="center"> Download the latest version: <a href="https://github.com/theoneandonlyshadow/NetProbe/blob/main/netprobe.rar">NetProbe</a> </p>
-<p align="center"> Only download the <b> netprobe.rar </b> then launch <b> netprobe.exe </b> </p>
+<p align="center">NetProbe Mk.2 is releasing soon.</p>
+<p align="center"><strike> Download the latest version: <a href="https://github.com/theoneandonlyshadow/NetProbe/blob/main/netprobe.rar">NetProbe</a></strike> </p>
+<p align="center"><strike> Only download the <b> netprobe.rar </b> then launch <b> netprobe.exe </b> </strike></p>
