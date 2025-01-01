@@ -8,47 +8,26 @@ const fs = require('fs').promises;
 let isEnabled = true; 
 let checkInterval;
 
-const clearDNS = {
-    title: 'Clear DNS Cache',
-    tooltip: 'Clear the local DNS cache',
-    checked: false,
-    enabled: true,
-  };
-  
-const disable = {
-  title: 'Enable',
-  tooltip: 'Enable or Disable NetProbe',
-  checked: false,
-  enabled: true,
-};
-
-const openLog = {
-  title: 'Open Logs',
-  tooltip: 'Open Logs Made by NetProbe',
-  checked: false,
-  enabled: true,
-};
-
-const exit = {
-  title: 'Exit',
-  tooltip: 'Permanently exit the app',
-  checked: false,
-  enabled: true,
+const stuffInTray = {
+  clearDNS: { title: 'Clear DNS Cache', tooltip: 'Clear the local DNS cache', enabled: true },
+  toggle: { title: 'Disable', tooltip: 'Enable or Disable NetProbe', enabled: true },
+  openLog: { title: 'Open Logs', tooltip: 'Open logs created by NetProbe', enabled: true },
+  exit: { title: 'Exit', tooltip: 'Exit the application', enabled: true },
 };
 
 const systray = new SysTray({
   menu: {
-    icon: 'tau.png',
-    isTemplateIcon: os.platform() === 'darwin',
-    title: 'NetProbe',
-    tooltip: 'NetProbe',
-    items: [
-        clearDNS,
-        disable,
-        SysTray.separator,
-        openLog,
-        exit,
-    ],
+      icon: './tau.png',
+      isTemplateIcon: os.platform() === 'darwin',
+      title: 'NetProbe Mk.2',
+      tooltip: 'NetProbe',
+      items: [
+          stuffInTray.clearDNS,
+          stuffInTray.toggle,
+          SysTray.separator,
+          stuffInTray.openLog,
+          stuffInTray.exit,
+      ],
   },
   debug: false,
   copyDir: true,
@@ -128,7 +107,7 @@ const clearDnsCache = () => {
   
     let command = '';
   
-    if (platform === 'win32') {
+    if (platform === 'win32' || 'win64') {
       command = 'ipconfig /flushdns';  // For Windows
     } else if (platform === 'darwin') {
       command = 'sudo killall -HUP mDNSResponder';  // For macOS
@@ -259,7 +238,7 @@ async function checkIfLogExists() {
         onlineNotificationShown = true;
         notificationShown = false; // Reset the offline notification flag
       }
-    }, 1000); // checks every second
+    }, 400); // checks every second
   };
   
 const NPInit = () => {
