@@ -280,4 +280,4 @@ systray.ready().then(() => {
   console.log('NetProbe failed to start:' + err.message);
 });
 
-// testing
+// test cases
