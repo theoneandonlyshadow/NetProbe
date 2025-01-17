@@ -4,6 +4,8 @@
 NetProbe Mk.2 is a system tray application that monitors internet connectivity, logs connection status changes, and provides utility features like clearing DNS cache and viewing logs. Built using Node.js, it is designed to work seamlessly on Windows, macOS, and Linux.
 
 ---
+[Codebase Documentation](https://github.com/theoneandonlyshadow/netprobe/tree/mk.2/moredocs.md)
+---
 
 ## Features
 
