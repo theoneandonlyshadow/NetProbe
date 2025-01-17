@@ -230,3 +230,5 @@ systray.ready().then(() => {
   fs.appendFile('netprobe_log.txt', `NetProbe failed to start ${err} :: ${new Date().toString()}\n`);
   console.error('NetProbe failed to start:', err);
 });
+
+// test cases
