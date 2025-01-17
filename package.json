@@ -8,19 +8,22 @@
   },
   "description": "Internet Connection Monitor using JavaScript. FOSS by MaxTac.",
   "version": "2.0.0",
-  "bin": "netprobe.js",
   "scripts": {
+    "build": "esbuild netprobe.js --bundle --platform=node --outfile=netprobe-out.js",
     "start": "node netprobe.js",
     "package": "npx exe exe.json"
   },
   "dependencies": {
     "@angablue/exe": "^3.2.4",
     "child_process": "^1.0.2",
+    "docker": "^1.0.0",
     "is-online": "^11.0.0",
+    "nexe": "^4.0.0-rc.6",
     "node-notifier": "^10.0.1",
     "os": "^0.1.2",
     "systray": "^1.0.5",
-    "systray2": "^2.1.4"
+    "systray2": "^2.1.4",
+    "webpack": "^5.97.1"
   },
   "properties": {
     "FileDescription": "{package:description}",
@@ -29,10 +32,22 @@
     "OriginalFilename": "{package:name}"
   },
   "pkg": {
+    "scripts": "netprobe.js",
+    "assets": "/assets/",
+    "outputPath": "dist",
     "targets": [
       "node23-linux-x64",
       "node23-macos-x64",
       "node23-win-x64"
     ]
+  },
+  "devDependencies": {
+    "electron": "^33.3.1",
+    "electron-packager": "^17.1.2",
+    "nw": "^0.94.1-1",
+    "nw-builder": "^4.13.8"
+  },
+  "bin": {
+    "execute": "netprobe.js"
   }
 }
