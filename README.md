@@ -51,11 +51,7 @@ NetProbe Mk.2 is a system tray application that monitors internet connectivity, 
 
 ---
 
-### Steps to download
-1. Go to [releases](https://github.com/theoneandonlyshadow/NetProbe/releases/tag/Mk.2) page
-2. Download `NetProbe.Mk.2.zip`.
-3. Extract
-4. launch `NetProbe.exe`
+# [Steps to download](https://github.com/theoneandonlyshadow/NetProbe/releases/tag/Mk.2)
 
 ## Usage
 
