@@ -136,6 +136,10 @@ This project is licensed by MaxTac under the [MIT License](LICENSE).
 
 ---
 
+## Project Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/8337f992a8449db1bac59a4d4fec14003c7f5547.svg "Repobeats analytics image")
+
 ## Credits
 
 - **Developer**: [Madhav Nair](https://github.com/theoneandonlyshadow)
